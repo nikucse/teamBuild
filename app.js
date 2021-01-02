@@ -30,6 +30,7 @@ if (dev) {
 
 // Redirects
 app.post("/contact-us", (req, res) => {
+  console.log(req.body);
   let data = `Time: ${new Date().getDate()}-${new Date().getMonth()}-${new Date().getUTCFullYear()} | Name: ${
     req.body.name
   } | Email: ${req.body.email} | Message: ${req.body.message} \n`;
